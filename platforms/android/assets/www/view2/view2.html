@@ -1,0 +1,47 @@
+<h1><i class="fa fa-bar-chart"></i> SERVER DETAIL</h1>
+<hr>
+
+<form class="form-horizontal">
+  <!--jmx["java.lang:type=OperatingSystem", "SystemLoadAverage"]-->
+  <div class="form-group">
+    <label for="threading" class="col-sm-3">OS system load average:</label>
+    <div id="threading" class="col-sm-5" ng-controller="View2Ctrl">
+      {{threading}}
+    </div>
+  </div>
+  <!--jmx["java.lang:type=OperatingSystem", "ProcessCpuTime"]-->
+  <div class="form-group">
+    <label for="cpuStatus" class="col-sm-3">CPU time:</label>
+    <div id="cpuStatus" class="col-sm-5" ng-controller="View2Ctrl">
+      {{cpuStatus}}
+    </div>
+  </div>
+  <!--jmx["java.lang:type=Memory","HeapMemoryUsage.used"]-->
+  <div class="form-group">
+    <label for="heapMemory" class="col-sm-3">Heap Memory used:</label>
+    <div id="heapMemory" class="col-sm-5" ng-controller="View2Ctrl">
+      {{heapMemory}}
+    </div>
+  </div>
+  <!--jmx["java.lang:type=Memory","HeapMemoryUsage.max"]-->
+  <div class="form-group">
+    <label for="heapMaxMemory" class="col-sm-3">Heap Memory max:</label>
+    <div id="heapMaxMemory" class="col-sm-5" ng-controller="View2Ctrl">
+      {{heapMaxMemory}}
+    </div>
+  </div>
+  <!--jmx["java.lang:type=Threading", "ThreadCount"]-->
+  <div class="form-group">
+    <label for="activeThread" class="col-sm-3">Active Thread count:</label>
+    <div id="activeThread" class="col-sm-5" ng-controller="View2Ctrl">
+      {{activeThread}}
+    </div>
+  </div>
+  <!--jmx["java.lang:type=GarbageCollector,name=PS MarkSweep", "CollectionCount"]-->
+  <div class="form-group">
+    <label for="garbageCollection" class="col-sm-3">Garbage collection count:</label>
+    <div id="garbageCollection" class="col-sm-5" ng-controller="View2Ctrl">
+      {{garbageCollection}}
+    </div>
+  </div>
+</form>

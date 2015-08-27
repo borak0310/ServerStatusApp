@@ -1,0 +1,44 @@
+/* app css stylesheet */
+
+
+body {
+  margin-bottom: 50px;
+  clear: both;
+}
+.footer {
+  background: #111 none repeat scroll 0% 0%;
+  color: #666;
+  text-align: center;
+  padding: 1em;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  font-size: 80%;
+}
+
+/* navbar */
+.navbar-default {
+  background-color: #006160;
+  border-color: #E7E7E7;
+}
+
+.navbar-default .navbar-brand {
+  color: #f9f9f9;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #f9f9f9;
+  font-size: large;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #f9f9f9;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #f9f9f9;
+  font-size: large;
+}
+/* pure layout css stylesheet  end */

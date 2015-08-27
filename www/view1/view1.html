@@ -1,0 +1,36 @@
+<!doctype html>
+
+<p>SERVER LAST UPDATE: 2015/07/11 09:50</p>
+
+<button type="button" class="btn btn-default btn-md">
+    <i class="fa fa-cog fa-spin"></i> Refresh
+</button>
+
+<div class=" table-responsive" ng-controller="View1Ctrl">
+    <!-- Default panel contents -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>SERVER NAME</th>
+                <th>CPU%</th>
+                <th>MEM%</th>
+                <th>CONN</th>
+                <th>STATUS</th>
+            </tr>
+        </thead>
+        <tbody ng-repeat="statusItems in serverStatusList">
+            <tr>
+                <td>{{$index+1}}</td>
+                <td>{{statusItems.serverName}}</td>
+                <td>{{statusItems.cpu}}%</td>
+                <td>{{statusItems.mem}}%</td>
+                <td>{{statusItems.conn}}</td>
+                <td>{{statusItems.status}}</td>
+            </tr>
+            <tr ng-show="statusItems.warning">
+                <td colspan="6">Warning !!!</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
